@@ -1,0 +1,85 @@
+.services-box {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    margin: 0 -10px -20px;
+    @include flex();
+
+    @media (max-width: 400px) {
+        width: 100%;
+        margin: 0 0 -20px;
+    }
+
+    .service {
+        width: -webkit-calc(25% - 20px);
+        width: calc(25% - 20px);
+        margin: 0 10px 20px;
+        border: 1px solid #E7EBEB;
+        height: 160px;
+        @extend %vertAlign;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        @media (max-width: 750px) {
+            width: -webkit-calc(50% - 20px);
+            width: calc(50% - 20px);
+        }
+
+        @media (max-width: 400px) {
+            width: 100%;
+            height: 140px;
+        }
+
+        img {
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            @extend %vertAlign;
+            background-color: $gold;
+            padding: 10px 20px;
+            color: #fff;
+            opacity: 0;
+            visibility: hidden;
+            text-align: left;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            @media (max-width: 1000px) {
+                padding: 10px;
+            }
+            @media (max-width: 400px) {
+                font-size: 15px;
+            }
+            
+            p {
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 95%;
+                margin: 0 -2px;
+                font-size: 14px;
+                text-transform: uppercase;
+                line-height: 22px;
+
+                @media (max-width: 1000px) {
+                    font-size: 13px;
+                    line-height: normal;
+                }
+            }
+        }
+
+        &:hover {
+            .card {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

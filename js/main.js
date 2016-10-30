@@ -33,7 +33,7 @@ jQuery(document).ready(function($) {
         if ($('header').hasClass('active')) {
                 $('body, html').css('overflow', 'hidden');
             } else {
-                $('body, html').css('overflow', 'visible');
+                $('body, html').css('overflow', 'auto');
             }
     });
 
@@ -58,6 +58,37 @@ jQuery(document).ready(function($) {
         removalDelay: 300,
         mainClass: 'my-mfp-slide-bottom'
     });
+
+
+    $('.projects-slider').slick({
+        dots: false,
+        arrows: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 400,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+        ]
+    })
 
 
 

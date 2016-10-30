@@ -1,0 +1,25 @@
+.footer {
+    padding: 31px 0;
+    color: #888888;
+    background-color: $blue;
+    font-size: 14px;
+
+    p {
+        width: 33.333%;
+        text-align: center;
+
+        @media (max-width: 750px) {
+            width: 100%;
+            margin: 5px 0;
+            text-align: center!important;
+        }
+
+        &:first-child {
+            text-align: left;
+        }
+
+        &:last-child {
+            text-align: right
+        }
+    }
+}

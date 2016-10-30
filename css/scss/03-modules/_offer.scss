@@ -1,3 +1,78 @@
 .offer {
-    height: 800px;
+    height: auto;
+    padding: 220px 0;
+    background-image: url(../images/offer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color: #fff;
+
+    @media (max-width: 1000px) {
+        padding: 150px 0;
+    }
+
+    &__info {
+        text-align: left;
+        position: relative;
+
+        h1 {
+            width: 550px;
+            display: block;
+            font-size: 40px;
+            font-weight: normal;
+            font-family: $fm;
+            line-height: 45px;
+            margin-bottom: 60px;
+
+            @media (max-width: 750px) {
+                width: 100%;
+                font-size: 30px;
+                line-height: normal;
+                padding-right: 55px;
+            }
+        }
+
+        .arrow {
+            width: 70px;
+            height: 140px;
+            background-image: url(../images/arrow.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+
+            @media (max-width: 750px) {
+                width: 35px;
+                height: 70px;
+                top: 10px;
+                -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                -o-transform: translateY(0);
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 400px) {
+            .button {
+                display: block;
+                margin: 0 auto 20px;
+                text-align: center;
+                width: 200px;
+            }
+        }
+
+        .srvcs {
+            margin-left: 8px;
+
+            @media (max-width: 400px) {
+                margin-left: auto;
+            }
+        }
+    }
 }

@@ -1,9 +1,31 @@
 
 // TYPOGRAPHIC
 // ---------------------------
-html,
+@media (min-width: 1201px) {
+    html,
+    body {
+        overflow: auto!important;
+    }
+}
 body {
 	height: 100%;
+}
+body {
+    font-family: $fd;
+    font-size: 14px;
+    color: $blue;
+}
+h2 {
+    font-size: 40px;
+    font-family: $fm;
+    color: $blue;
+    text-align: left;
+    margin-bottom: 50px;
+    font-weight: normal;
+
+    @media (max-width: 750px) {
+        font-size: 30px;
+    }
 }
 
 
@@ -13,4 +35,22 @@ body {
 	width: 1200px;
 	margin: 0 auto;
 	text-align: center;
+    padding: 0 10px;
+
+    @media (max-width: 1200px) {
+        width: 100%;
+    }
+}
+.flex {
+    @include flex();
+}
+section {
+    padding: 60px 0 70px;
+
+    &.no-padding-b {
+        padding-bottom: 0;
+    }
+    &.no-padding-t {
+        padding-top: 0;
+    }
 }

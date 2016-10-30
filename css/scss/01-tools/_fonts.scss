@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Futura New Demi';
+    src: url('../fonts/subset-FuturaNewDemi-Reg.eot');
+    src: url('../fonts/subset-FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/subset-FuturaNewDemi-Reg.woff') format('woff'),
+         url('../fonts/subset-FuturaNewDemi-Reg.ttf') format('truetype'),
+         url('../fonts/subset-FuturaNewDemi-Reg.svg#FuturaNewDemi-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New Medium';
+    src: url('../fonts/subset-FuturaNewMedium-Reg.eot');
+    src: url('../fonts/subset-FuturaNewMedium-Reg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/subset-FuturaNewMedium-Reg.woff') format('woff'),
+         url('../fonts/subset-FuturaNewMedium-Reg.ttf') format('truetype'),
+         url('../fonts/subset-FuturaNewMedium-Reg.svg#FuturaNewMedium-Reg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
