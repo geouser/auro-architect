@@ -2,10 +2,15 @@
     background-color: #F3F8F8;
 }
 
-.projects-slider {
+.projects-box {
     width: -webkit-calc(100% + 20px);
     width: calc(100% + 20px);
     margin: 0 -10px;
+    position: relative;
+
+    @include flex($alignI: flex-start, $justify: flex-start);
+}
+.projects-slider {
     position: relative;
 
     .slick-arrow {
@@ -28,6 +33,23 @@
 
 .project {
     margin: 0 10px;
+    width: -webkit-calc(25% - 20px);
+    width: calc(25% - 20px);
+    display: block;
+
+    @media (max-width: 900px) {
+        width: -webkit-calc(33.3333% - 20px);
+        width: calc(33.3333% - 20px);
+    }
+
+    @media (max-width: 650px) {
+        width: -webkit-calc(50% - 20px);
+        width: calc(50% - 20px);
+    }
+    @media (max-width: 400px) {
+        width: -webkit-calc(100% - 20px);
+        width: calc(100% - 20px);
+    }
 
     &__preview {
         margin: 0;
@@ -35,6 +57,7 @@
 
         img {
             width: 100%;
+            display: block;
             -webkit-transition: all 0.3s ease;
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;

@@ -1,11 +1,26 @@
 .offer {
-    height: auto;
-    padding: 220px 0;
-    background-image: url(../images/offer-bg.jpg);
+    color: #fff;
+    text-align: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    color: #fff;
+    padding: 110px 0 135px;
+
+    h1 {
+        font-size: 40px;
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: underline;
+        font-family: $fm;
+        font-weight: normal;
+    }
+
+    &--slider {
+        height: auto;
+        padding: 220px 0;
+        background-image: url(../images/offer-bg.jpg);
+       
+    }
 
     @media (max-width: 1000px) {
         padding: 150px 0;
@@ -23,6 +38,8 @@
             font-family: $fm;
             line-height: 45px;
             margin-bottom: 60px;
+            text-transform: none;
+            text-decoration: none;
 
             @media (max-width: 750px) {
                 width: 100%;
@@ -75,4 +92,5 @@
             }
         }
     }
+
 }
