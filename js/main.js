@@ -60,6 +60,10 @@ jQuery(document).ready(function($) {
     });
 
 
+
+    /*---------------------------
+                                  Recent projects slider
+    ---------------------------*/
     $('.projects-slider').slick({
         dots: false,
         arrows: true,
@@ -88,6 +92,26 @@ jQuery(document).ready(function($) {
               }
             },
         ]
+    })
+
+
+    /*---------------------------
+                                  Eaxample slider
+    ---------------------------*/
+    $('.fade-slider').slick({
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '.controls-slider'
+    });
+
+    $('.controls-slider').slick({
+        arrows: false,
+        dots: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.fade-slider',
+        focusOnSelect: true
     })
 
 
