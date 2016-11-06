@@ -248,4 +248,14 @@ jQuery(document).ready(function($) {
         googleMap_initialize();   
     }
 
+
+    /*Smooth loading*/
+    $( ".overlay" ).delay( 1000 ).queue(function(next) {
+        $(this).css({
+            opacity: '0',
+            visibility: 'hidden'
+        });
+        next(); 
+    })
+
 }); // end file
