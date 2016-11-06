@@ -96,6 +96,40 @@ jQuery(document).ready(function($) {
 
 
     /*---------------------------
+                                  Offer slider
+    ---------------------------*/
+    $('.offer-slider').slick({
+        dots: false,
+        arrows: false,
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 751,
+                settings: {
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    fade: false
+                }
+            }
+        ]
+    })
+
+    $('.control-arrow').on('mouseover', function(event) {
+        event.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    $('.js-offer-slider-next').on('click', function(event) {
+        event.preventDefault();
+        $('.offer-slider').slick('slickNext')
+    });
+    $('.js-offer-slider-prev').on('click', function(event) {
+        event.preventDefault();
+        $('.offer-slider').slick('slickPrev')
+    });
+
+
+    /*---------------------------
                                   Eaxample slider
     ---------------------------*/
     $('.fade-slider').slick({
