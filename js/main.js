@@ -5,6 +5,15 @@ window.params = {
 };
 
 
+/*Smooth loading*/
+$( ".overlay" ).delay( 1000 ).queue(function(next) {
+    $(this).css({
+        opacity: '0',
+        visibility: 'hidden'
+    });
+    next(); 
+})
+
 jQuery(document).ready(function($) {
 
     /*---------------------------
@@ -57,6 +66,33 @@ jQuery(document).ready(function($) {
         midClick: true,
         removalDelay: 300,
         mainClass: 'my-mfp-slide-bottom'
+    });
+
+    $('.gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        closeOnContentClick: false,
+        closeBtnInside: false,
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        modal: false,
+        preloader: false,
+        mainClass: 'mfp-with-zoom mfp-img-mobile',
+        image: {
+            verticalFit: true,
+        },
+        gallery: {
+            enabled: true
+        },
+        zoom: {
+            enabled: true,
+            duration: 300, // don't foget to change the duration also in CSS
+            opener: function(element) {
+                return element.find('img');
+            }
+        }
+        
     });
 
 
@@ -145,7 +181,28 @@ jQuery(document).ready(function($) {
         slidesToShow: 6,
         slidesToScroll: 1,
         asNavFor: '.fade-slider',
-        focusOnSelect: true
+        focusOnSelect: true,
+
+        responsive: [
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 5
+                }
+            },
+            {
+                breakpoint: 400,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 350,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     })
 
 
@@ -247,15 +304,4 @@ jQuery(document).ready(function($) {
     if ( $('#map_canvas').length > 0) {
         googleMap_initialize();   
     }
-
-
-    /*Smooth loading*/
-    $( ".overlay" ).delay( 1000 ).queue(function(next) {
-        $(this).css({
-            opacity: '0',
-            visibility: 'hidden'
-        });
-        next(); 
-    })
-
 }); // end file
