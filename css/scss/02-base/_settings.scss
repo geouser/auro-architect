@@ -34,19 +34,35 @@ h2 {
     height: 100%;
     position: fixed;
     background-color: #fff;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     opacity: 1;
     visibility: visible;
-    z-index: 100;
-    background-color: #706D5D;
+    z-index: 101;
     text-align: center;
+    overflow: hidden;
     @extend %vertAlign;
 
     img {
         display: inline-block;
         vertical-align: middle;
+    }
+
+    @media (max-width: 1024px) {
+        .loadImg {
+            -webkit-transform: scale(0.40);
+            -ms-transform: scale(0.40);
+            -o-transform: scale(0.40);
+            transform: scale(0.40);
+            -webkit-transform-origin: 50% 50%;
+            -moz-transform-origin: 50% 50%;
+            -o-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            left: 50%;
+            margin-left: -344px;
+        }
     }
 }
 

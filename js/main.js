@@ -6,11 +6,22 @@ window.params = {
 
 
 /*Smooth loading*/
-$( ".overlay" ).delay( 1000 ).queue(function(next) {
+if ( $('#intro-music').length > 0 ) {
+    $('#intro-music')[0].play();
+}
+var overlayDelay = 1000;
+if ( $('body').hasClass('main-page') ) {
+    var overlayDelay = 7000;
+}
+$( ".overlay" ).delay( overlayDelay ).queue(function(next) {
     $(this).css({
         opacity: '0',
         visibility: 'hidden'
     });
+    
+    if ( $('#intro-music').length > 0 ) {
+        $('#intro-music').animate({volume: 0}, 3000);
+    }
     next(); 
 })
 
