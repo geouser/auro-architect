@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!--[if IE]>
+        <meta http-equiv="ImageResize" content="no">
+        <meta http-equiv="ImageToolbar" content="no">
+        <meta name="MSSmartTagsPreventParsing" content="true">
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"><![endif]-->
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+        <meta name="google-site-verification" content="">
+        <!--<link rel="shortcut icon" href="images/favicon.ico">-->
+        
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/general.css">
+    </head>
+    <body>
+
+
+       
+        <div class="loadImg">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 688 458.8" style="enable-background:new 0 0 688 458.8;" xml:space="preserve">
+
+                <style type="text/css">
+                
+                    .loadImg {
+                        width: 688px;
+                        height: 460px;
+                        position: fixed;
+                        top: 0; left: 0;
+                        right: 0; bottom:0;
+                        margin: auto;
+                    }
+                    .st0{fill:#FFFFFF;}
+                    .st1{fill:#B48E67;}
+                    text.motto {font-family:'Georgia-Italic'; font-size:32px; fill:#B48E67;}
+
+
+                    /* Tool style and animation */
+                    .tool path {
+                        stroke: #B48E67;
+                    }
+                    .tool path {
+                        fill:  transparent;
+                    }
+                    .tool path:nth-of-type(1n) {
+                        stroke-dasharray: 108;
+                    }
+                    .tool path:nth-of-type(3n) {
+                        stroke-dasharray: 940;
+                        stroke-dashoffset: 940;
+                    }
+
+                    .drawCircle { 
+                        -webkit-animation: drawCircle 1.2s linear 0s forwards;
+                        animation: drawCircle 1.2s linear 0s forwards;
+                    }
+                    .drawTool {
+                        -webkit-animation: drawTool 1.2s linear 0s forwards;
+                        animation: drawTool 1.2s linear 0s forwards;
+                    }
+
+                    @-webkit-keyframes drawCircle {
+                        0%   {stroke-dashoffset: 108; fill: transparent;}
+                        60%  {fill: transparent;}
+                        100% {stroke-dashoffset: 0; fill: #B48E67;}
+                    }
+                    @keyframes drawCircle {
+                        0%   {stroke-dashoffset: 108; fill: transparent;}
+                        60%  {fill: transparent;}
+                        100% {stroke-dashoffset: 0; fill: #B48E67;}
+                    }
+
+                    @-webkit-keyframes drawTool {
+                        0%   {stroke-dashoffset: 940; fill: transparent;}
+                        60%  {fill: transparent;}
+                        100% {stroke-dashoffset: 0; fill: #B48E67;}
+                    }
+                    @keyframes drawTool {
+                        0%   {stroke-dashoffset: 940; fill: transparent;}
+                        60%  {fill: transparent;}
+                        100% {stroke-dashoffset: 0; fill: #B48E67;}
+                    }
+                    
+
+                    /* Pen writes text */
+                    .letter {
+                        fill : transparent;
+                        stroke-dasharray: 315;
+                        stroke-dashoffset: 315;
+                        stroke: #B48E67;
+                    }
+                    text.motto {
+                        display: none;
+                        color: #000;
+                        fill: #000;
+                        font-family: "Georgia";
+                    }
+
+                    .drawText { /* letters */
+                        -webkit-animation: drawText .4s linear 0s forwards;
+                        animation: drawText .4s linear 0s forwards;
+                    }
+                     @-webkit-keyframes drawText {
+                        0%   {stroke-dashoffset: 315; fill: transparent;}
+                        60%  {fill: transparent;}
+                        100% {stroke-dashoffset: 0; fill: #B48E67;}
+                    }
+                    @keyframes drawText {
+                        0%   {stroke-dashoffset: 315; fill: transparent;}
+                        60%  {fill: transparent;}
+                        100% {stroke-dashoffset: 0; fill: #B48E67;}
+                    }
+
+                    #pen {
+                        position: absolute;
+                        width: 98px;
+                        left: 41px;
+                        top: 246px;
+                        animation: pen 4.7s linear .5s forwards;
+                        opacity: 0;
+                        -webkit-transition: opacity .1s;
+                           -moz-transition: opacity .1s;
+                            -ms-transition: opacity .1s;
+                             -o-transition: opacity .1s;
+                                transition: opacity .1s;
+                    }
+                    @-webkit-keyframes pen {
+                        0%     {left: 41px;}
+                        .6%     {left: 16px; top: 246px; opacity: 1;} /* A */
+                        1.9%   {left: 5px; top: 260px;}
+                        3.8%   {left: 27px; top: 197px;}
+                        5.7%   {left: 53px; top: 261px;}
+
+                        7.8%   {top: 200px; left: 67px;}
+
+                        9%   {left: 67px; top: 243px;}
+                        10.2%   {left: 71px; top: 249px;}
+                        11.4%   {left: 84px; top: 255px;}
+                        12.6%   {left: 97px; top: 253px;}
+                        13.8%  {left: 102px;top: 243px;}
+
+                        15.4%    {left: 102px; top: 200px;} /* R */
+                        
+                        16.4%    {left: 140px; top: 234px;}
+                        17.2%    {left: 155px; top: 260px;}
+                        17.9%    {left: 140px; top: 234px;}
+                        19.2%    {left: 126px; top: 261px;}
+                        19.6%    {left: 126px; top: 260px;}
+                        20.2%    {left: 126px; top: 260px;}
+                        20.8%    {left: 147px; top: 202px;}
+                        21.2%    {left: 156px; top: 218px;}
+                        22%    {left: 143px; top: 233px;}
+
+                        23.1%    {left: 172px; top: 233px;}
+
+                        24.1%    {left: 177px; top: 246px;}
+                        25%    {left: 172px; top: 233px;}
+                        25.9%    {left: 221px; top: 257px;}
+                        26.8%    {left: 226px; top: 233px;}
+                        27.7%    {left: 222px; top: 215px;}
+                        28.6%    {left: 200px; top: 204px;}
+                        29.5%    {left: 176px; top: 215px;}
+
+                        30%    {left: 172px; top: 233px;} /* A */
+
+                        30.5%   {left: 302px; top: 246px;} 
+                        31.5%   {left: 276px; top: 246px;} 
+                        33%   {left: 265px; top: 260px;}
+                        34.5%   {left: 290px; top: 197px;}
+                        35%   {left: 313px; top: 261px;}
+
+                        37.7%    {left: 344px; top: 234px;} /* R */
+
+                        38.6%    {left: 359px; top: 260px;}
+                        39.5%    {left: 345px; top: 234px;}
+                        40.4%    {left: 331px; top: 200px;}
+                        41.5%    {left: 352px; top: 202px;}
+                        43%    {left: 361px; top: 218px;}
+                        44.2%    {left: 348px; top: 233px;}
+
+                        45.4%    {left: 418px; top: 204px;} /* C */
+
+                        46.4%    {left: 401px; top: 199px;}
+                        47.4%    {left: 384px; top: 205px;}
+                        48.4%    {left: 372px; top: 230px;}
+                        49.4%    {left: 380px; top: 252px;}
+                        50.4%    {left: 401px; top: 261px;}
+                        51.4%    {left: 418px; top: 256px;}
+
+                        53.1%    {left: 441px; top: 229px;} /* H */
+
+                        54%    {left: 471px; top: 229px;}
+                        55%    {left: 471px; top: 202px;}
+                        56%    {left: 471px; top: 260px;}
+                        57%    {left: 471px; top: 229px;}
+                        58%    {left: 436px; top: 229px;}
+                        59%    {left: 436px; top: 260px;}
+                        60%       {left: 436px; top: 200px;}
+
+                        60.8%    {left: 495px; top: 200px;} /* I */
+
+                        63%    {left: 495px; top: 260px;}
+
+                        66%    {left: 527px; top: 212px;}/* T */
+
+                        67.4%    {left: 527px; top: 261px;}
+                        68.8%    {left: 527px; top: 205px;}
+                        70.2%    {left: 509px; top: 205px;}
+                        71.6%    {left: 544px; top: 205px;}
+
+                        73%       {left: 586px; top: 205px;}/* E */
+                        
+                        74.6%    {left: 557px; top: 205px;}
+                        76.2%    {left: 557px; top: 226px;}
+                        77.7%    {left: 584px; top: 226px;}
+                        79.3%    {left: 557px; top: 226px;}
+                        81.5%    {left: 557px; top: 256px;}
+                        83%    {left: 587px; top: 256px;}
+
+                        84%    {left: 645px; top: 204px;} /* C */
+
+                        85.2%    {left: 628px; top: 199px;}
+                        86.7%    {left: 611px; top: 205px;}
+                        88%    {left: 599px; top: 230px;}
+                        90%    {left: 607px; top: 252px;}
+                        91%    {left: 628px; top: 261px;}
+                        92%    {left: 645px; top: 256px;}
+
+                        93%    {left: 670px; top: 212px;}/* T */
+
+                        94.5%    {left: 670px; top: 261px;}
+                        96%    {left: 670px; top: 205px;}
+                        97.5%    {left: 652px; top: 205px;}
+                        100%    {left: 686px; top: 205px; opacity: 1;}
+                    }
+                    @keyframes pen {
+                        0%     {left: 41px;}
+                        .6%     {left: 16px; top: 246px; opacity: 1;} /* A */
+                        1.9%   {left: 5px; top: 260px;}
+                        3.8%   {left: 27px; top: 197px;}
+                        5.7%   {left: 53px; top: 261px;}
+
+                        7.8%   {top: 200px; left: 67px;}
+
+                        9%   {left: 67px; top: 243px;}
+                        10.2%   {left: 71px; top: 249px;}
+                        11.4%   {left: 84px; top: 255px;}
+                        12.6%   {left: 97px; top: 253px;}
+                        13.8%  {left: 102px;top: 243px;}
+
+                        15.4%    {left: 102px; top: 200px;} /* R */
+                        
+                        16.4%    {left: 140px; top: 234px;}
+                        17.2%    {left: 155px; top: 260px;}
+                        17.9%    {left: 140px; top: 234px;}
+                        19.2%    {left: 126px; top: 261px;}
+                        19.6%    {left: 126px; top: 260px;}
+                        20.2%    {left: 126px; top: 260px;}
+                        20.8%    {left: 147px; top: 202px;}
+                        21.2%    {left: 156px; top: 218px;}
+                        22%    {left: 143px; top: 233px;}
+
+                        23.1%    {left: 172px; top: 233px;}
+
+                        24.1%    {left: 177px; top: 246px;}
+                        25%    {left: 172px; top: 233px;}
+                        25.9%    {left: 221px; top: 257px;}
+                        26.8%    {left: 226px; top: 233px;}
+                        27.7%    {left: 222px; top: 215px;}
+                        28.6%    {left: 200px; top: 204px;}
+                        29.5%    {left: 176px; top: 215px;}
+
+                        30%    {left: 172px; top: 233px;} /* A */
+
+                        30.5%   {left: 302px; top: 246px;} 
+                        31.5%   {left: 276px; top: 246px;} 
+                        33%   {left: 265px; top: 260px;}
+                        34.5%   {left: 290px; top: 197px;}
+                        35%   {left: 313px; top: 261px;}
+
+                        37.7%    {left: 344px; top: 234px;} /* R */
+
+                        38.6%    {left: 359px; top: 260px;}
+                        39.5%    {left: 345px; top: 234px;}
+                        40.4%    {left: 331px; top: 200px;}
+                        41.5%    {left: 352px; top: 202px;}
+                        43%    {left: 361px; top: 218px;}
+                        44.2%    {left: 348px; top: 233px;}
+
+                        45.4%    {left: 418px; top: 204px;} /* C */
+
+                        46.4%    {left: 401px; top: 199px;}
+                        47.4%    {left: 384px; top: 205px;}
+                        48.4%    {left: 372px; top: 230px;}
+                        49.4%    {left: 380px; top: 252px;}
+                        50.4%    {left: 401px; top: 261px;}
+                        51.4%    {left: 418px; top: 256px;}
+
+                        53.1%    {left: 441px; top: 229px;} /* H */
+
+                        54%    {left: 471px; top: 229px;}
+                        55%    {left: 471px; top: 202px;}
+                        56%    {left: 471px; top: 260px;}
+                        57%    {left: 471px; top: 229px;}
+                        58%    {left: 436px; top: 229px;}
+                        59%    {left: 436px; top: 260px;}
+                        60%       {left: 436px; top: 200px;}
+
+                        60.8%    {left: 495px; top: 200px;} /* I */
+
+                        63%    {left: 495px; top: 260px;}
+
+                        66%    {left: 527px; top: 212px;}/* T */
+
+                        67.4%    {left: 527px; top: 261px;}
+                        68.8%    {left: 527px; top: 205px;}
+                        70.2%    {left: 509px; top: 205px;}
+                        71.6%    {left: 544px; top: 205px;}
+
+                        73%       {left: 586px; top: 205px;}/* E */
+                        
+                        74.6%    {left: 557px; top: 205px;}
+                        76.2%    {left: 557px; top: 226px;}
+                        77.7%    {left: 584px; top: 226px;}
+                        79.3%    {left: 557px; top: 226px;}
+                        81.5%    {left: 557px; top: 256px;}
+                        83%    {left: 587px; top: 256px;}
+
+                        84%    {left: 645px; top: 204px;} /* C */
+
+                        85.2%    {left: 628px; top: 199px;}
+                        86.7%    {left: 611px; top: 205px;}
+                        88%    {left: 599px; top: 230px;}
+                        90%    {left: 607px; top: 252px;}
+                        91%    {left: 628px; top: 261px;}
+                        92%    {left: 645px; top: 256px;}
+
+                        93%    {left: 670px; top: 212px;}/* T */
+
+                        94.5%    {left: 670px; top: 261px;}
+                        96%    {left: 670px; top: 205px;}
+                        97.5%    {left: 652px; top: 205px;}
+                        100%    {left: 686px; top: 205px; opacity: 1;}
+                    }
+                </style>
+
+                <g class="letters">
+                    <path class="st0" d="M42.7,342.6h-26l-6.8,14.8H0l30.1-64.6l29,64.6h-10L42.7,342.6z M38.9,334l-9-20.7L20.4,334H38.9z"/>
+                    <path class="st0" d="M73.5,296.6v36.6c0,5.2,0.9,9,2.6,11.5c2.5,3.5,6.1,5.2,10.8,5.2c4.6,0,8.2-1.7,10.8-5.2
+                        c1.7-2.3,2.6-6.2,2.6-11.5v-36.6h9.2v39.2c0,6.4-2,11.7-6,15.8c-4.5,4.6-10,6.9-16.5,6.9s-12-2.3-16.5-6.9c-4-4.1-6-9.4-6-15.8
+                        v-39.2L73.5,296.6L73.5,296.6z"/>
+                    <path class="st0" d="M144.6,331.5l18.8,25.9h-11.2l-17.4-24.9h-1.7v24.9H124v-60.8h10.8c8,0,13.8,1.5,17.4,4.5
+                        c3.9,3.4,5.9,7.8,5.9,13.3c0,4.3-1.2,8-3.7,11.1C151.9,328.6,148.6,330.6,144.6,331.5z M133.1,324.5h2.9c8.7,0,13-3.3,13-10
+                        c0-6.2-4.2-9.3-12.7-9.3H133L133.1,324.5L133.1,324.5z"/>
+                    <path class="st0" d="M168.1,326.7c0-8.6,3.1-15.9,9.4-22.1c6.3-6.1,13.8-9.2,22.5-9.2s16.1,3.1,22.3,9.3c6.2,6.2,9.3,13.6,9.3,22.3
+                        c0,8.7-3.1,16.2-9.4,22.3c-6.3,6.1-13.9,9.2-22.7,9.2c-7.9,0-14.9-2.7-21.2-8.2C171.6,344.3,168.1,336.5,168.1,326.7z M177.4,326.8
+                        c0,6.7,2.3,12.3,6.8,16.6c4.5,4.3,9.7,6.5,15.6,6.5c6.4,0,11.8-2.2,16.1-6.6c4.4-4.5,6.6-9.9,6.6-16.3c0-6.5-2.2-11.9-6.5-16.3
+                        s-9.6-6.6-16-6.6c-6.3,0-11.7,2.2-16,6.6C179.6,315.1,177.4,320.4,177.4,326.8z"/>
+                    <path class="st0" d="M303.9,342.6h-26l-6.8,14.8h-9.9l30.1-64.6l29,64.6h-10L303.9,342.6z M300.1,334l-9-20.7l-9.5,20.7H300.1z"/>
+                    <path class="st0" d="M348.5,331.5l18.8,25.9h-11.2l-17.4-24.9H337v24.9h-9.2v-60.8h10.8c8,0,13.8,1.5,17.4,4.5
+                        c3.9,3.4,5.9,7.8,5.9,13.3c0,4.3-1.2,8-3.7,11.1C355.8,328.6,352.5,330.6,348.5,331.5z M337.1,324.5h2.9c8.7,0,13-3.3,13-10
+                        c0-6.2-4.2-9.3-12.7-9.3H337L337.1,324.5L337.1,324.5z"/>
+                    <path class="st0" d="M420,299.9v10.9c-5.3-4.4-10.8-6.7-16.5-6.7c-6.3,0-11.5,2.2-15.8,6.7s-6.5,9.9-6.5,16.4
+                        c0,6.4,2.2,11.8,6.5,16.2s9.6,6.6,15.8,6.6c3.2,0,6-0.5,8.2-1.6c1.3-0.5,2.6-1.2,3.9-2.1c1.4-0.9,2.8-2,4.3-3.2v11.1
+                        c-5.3,3-10.8,4.5-16.5,4.5c-8.7,0-16.1-3-22.3-9.1c-6.1-6.1-9.2-13.5-9.2-22.1c0-7.7,2.6-14.7,7.7-20.7
+                        c6.3-7.4,14.5-11.1,24.5-11.1C409.7,295.4,414.9,296.9,420,299.9z"/>
+                    <path class="st0" d="M442.5,320.4h26.2v-23.8h9.2v60.8h-9.2V329h-26.2v28.4h-9.2v-60.8h9.2V320.4z"/>
+                    <path class="st0" d="M501.6,296.6v60.8h-9.2v-60.8L501.6,296.6L501.6,296.6z"/>
+                    <path class="st0" d="M533,305.2v52.2h-9.2v-52.2h-14v-8.6h37.1v8.6H533z"/>
+                    <path class="st0" d="M588.7,305.2h-24.4v14.6H588v8.6h-23.7v20.3h24.4v8.6h-33.6v-60.8h33.6V305.2z"/>
+                    <path class="st0" d="M645.7,299.9v10.9c-5.3-4.4-10.8-6.7-16.5-6.7c-6.3,0-11.5,2.2-15.8,6.7s-6.5,9.9-6.5,16.4
+                        c0,6.4,2.2,11.8,6.5,16.2s9.6,6.6,15.8,6.6c3.2,0,6-0.5,8.2-1.6c1.3-0.5,2.6-1.2,3.9-2.1c1.4-0.9,2.8-2,4.3-3.2v11.1
+                        c-5.2,3-10.8,4.5-16.5,4.5c-8.7,0-16.1-3-22.3-9.1c-6.1-6.1-9.2-13.5-9.2-22.1c0-7.7,2.6-14.7,7.7-20.7
+                        c6.3-7.4,14.5-11.1,24.5-11.1C635.4,295.4,640.6,296.9,645.7,299.9z"/>
+                    <path class="st0" d="M674.1,305.2v52.2h-9.2v-52.2h-14v-8.6H688v8.6H674.1z"/>
+                </g>
+
+                <g class="tool">
+                    <path class="st0" d="M344.3,77.5c6.6,0,11.9-5.5,11.9-12.2c0-6.8-5.4-12.3-11.9-12.3c-6.6,0-11.9,5.5-11.9,12.3
+                        C332.4,72,337.7,77.5,344.3,77.5L344.3,77.5z"/>
+                    <path class="st0" d="M293.2,149l0.1-0.3c0-0.1,0.1-0.2,0.1-0.3L293.2,149z"/>
+                    <path class="st0" d="M435.9,161.5h-35.6c0-0.1,0-0.1-0.1-0.2c-1.5-4.4-3-8.7-4.5-13l-2.9-8.3c-1.1-3-2.2-6.1-3.2-9
+                        c-3.5-9.7-6.8-18.6-9.6-26.3c-2.9-7.7-5.3-14.1-7-18.5c-0.8-2.1-1.4-3.8-1.9-5c2.4-4.5,3.8-9.7,3.8-15.1c0-15.2-10.4-27.9-24.2-31
+                        V0h-13.2v35.1c-13.8,3.1-24.2,15.8-24.2,31c0,6.1,1.7,11.8,4.6,16.6c-0.1,0-0.1,0.1-0.2,0.1c-0.5,1.2-1.2,2.9-2,5.2
+                        c-1.7,4.5-4.1,10.9-6.9,18.6c-2.9,7.7-6.2,16.7-9.6,26.3c-0.8,2.4-1.7,4.8-2.6,7.3l-3.1,8.6c-1.5,4.2-3,8.5-4.4,12.9h-36.2v13.7
+                        h31.5c-0.4,1.1-0.8,2.2-1.1,3.4c-1.7,5.1-3.3,10.2-4.9,15.1c-1.6,4.9-3.2,9.6-4.6,14.1c-1.4,4.5-2.7,8.8-4,12.7
+                        c-1.2,3.9-2.3,7.6-3.2,10.8c-1,3.2-1.8,6-2.4,8.4c-1.3,4.7-2,7.3-2,7.3s1.4-2.4,3.9-6.4c1.2-2.1,2.7-4.6,4.4-7.5s3.6-6.1,5.6-9.7
+                        s4.2-7.4,6.5-11.5s4.7-8.5,7.1-12.9c2.5-4.5,5-9.1,7.6-13.9c1.7-3.2,3.5-6.5,5.2-9.8h84.7c1.4,2.7,2.9,5.4,4.3,8
+                        c2.6,4.7,5.1,9.4,7.6,13.9s4.8,8.8,7.2,12.9c2.3,4.1,4.5,7.9,6.5,11.5s4,6.8,5.6,9.7c1.7,2.9,3.2,5.4,4.4,7.4
+                        c2.5,4.1,3.9,6.5,3.9,6.5s-0.7-2.7-2-7.3c-0.7-2.3-1.5-5.1-2.4-8.4c-1-3.2-2-6.9-3.2-10.8s-2.6-8.2-4-12.7s-3-9.2-4.5-14.1
+                        c-1.6-4.9-3.3-9.9-4.9-15.1c-0.2-0.5-0.4-1.1-0.5-1.6h30.9v-13.9H435.9z M344,43.3c12.1,0,22,10.2,22,22.7s-9.9,22.6-22,22.6
+                        S322,78.4,322,66C322,53.5,331.9,43.3,344,43.3z M332.3,117.3c3.6-7.3,6.6-13.4,8.7-17.7c0.3-0.7,0.7-1.4,1-2c0.6,0,1.3,0.1,2,0.1
+                        c1.2,0,2.3-0.1,3.4-0.2c0.1,0.1,0.1,0.2,0.2,0.3c2.1,4.3,5.1,10.4,8.7,17.7c2.9,5.9,16.3,31.8,23.6,46h-0.1l-6.9-13.2
+                        c2.2,4.3,4.5,8.7,6.9,13.2H310C316.8,148.1,329.5,122.8,332.3,117.3z"/>
+                </g>
+                <text transform="matrix(1 0 0 1 166.8951 451.7804)" class="st1 st2 st3 motto">İşlərinizi bizə etibar edin</text>
+            </svg>
+            <img src="images/pen.svg" alt="" id="pen">
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+        <script src="js/countdown/jquery.plugin.js"></script> 
+        <script src="js/countdown/jquery.countdown.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+            <script>
+                $(document).ready(function(){
+
+                    $('.tool path:nth-of-type(1)').attr('class', 'drawCircle');
+                    $('.tool path:nth-of-type(3)').attr('class', 'drawTool');
+
+                    var delay = 350;
+                    $('.letters path').each(function(i, obj) {
+                        $(this).delay(delay).queue(function (next) { 
+                            $(this).attr('class','letter drawText'); next(); 
+                        });
+                        delay = delay + 350;
+                    });
+                    setTimeout(function(){ $('text.motto').fadeIn('slow'); }, 5000);
+                });
+            </script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
