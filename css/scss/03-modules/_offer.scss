@@ -76,11 +76,22 @@
         margin-bottom: 0;
 
         .slide {
-            padding: 170px 0 0;
+            padding: 0;
             height: 550px;
             background-position: 50% 50%;
             background-repeat: no-repeat;
             background-size: cover;
+            @extend %vertAlign;
+
+            .offer__info {
+                display: inline-block;
+                vertical-align: middle;
+                width: 1194px;
+
+                @media (max-width: 1200px) {
+                    width: 95%;
+                }
+            }
 
             @media (max-width: 400px) {
                 padding-top: 80px;
