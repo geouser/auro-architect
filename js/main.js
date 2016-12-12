@@ -137,6 +137,7 @@ jQuery(document).ready(function($) {
     $('.offer-slider').slick({
         dots: false,
         arrows: false,
+        speed: 800,
         fade: true,
         responsive: [
             {
